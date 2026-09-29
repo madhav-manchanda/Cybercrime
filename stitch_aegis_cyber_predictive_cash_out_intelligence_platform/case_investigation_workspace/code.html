@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed":"#9cf0ff","tertiary":"#ffe9d3","primary-container":"#00e5ff","secondary-container":"#00b2d6","surface":"#101418","on-primary":"#00363d","secondary-fixed":"#b3ebff","primary":"#c3f5ff","on-error":"#690005","on-secondary-fixed-variant":"#004e5f","background":"#101418","secondary-fixed-dim":"#4cd6fb","on-tertiary-container":"#7e4e00","on-surface":"#e0e2e9","outline-variant":"#3b494c","on-primary-container":"#00626e","error-container":"#93000a","on-error-container":"#ffdad6","surface-container":"#1c2024","tertiary-fixed-dim":"#ffb95f","on-background":"#e0e2e9","inverse-surface":"#e0e2e9","on-primary-fixed":"#001f24","inverse-primary":"#006875","tertiary-fixed":"#ffddb8","surface-dim":"#101418","surface-variant":"#31353a","error":"#ffb4ab","on-tertiary-fixed-variant":"#653e00","surface-tint":"#00daf3","inverse-on-surface":"#2d3136","on-secondary-container":"#003f4e","outline":"#849396","secondary":"#4cd6fb","surface-container-lowest":"#0b0f13","on-surface-variant":"#bac9cc","on-tertiary-fixed":"#2a1700","surface-container-high":"#272a2f","surface-bright":"#36393e","on-secondary-fixed":"#001f27","tertiary-container":"#ffc681","on-secondary":"#003642","surface-container-highest":"#31353a","surface-container-low":"#181c20","primary-fixed-dim":"#00daf3","on-primary-fixed-variant":"#004f58","on-tertiary":"#472a00"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-sm":"0.5rem","space-xs":"0.25rem","gutter":"0.75rem","space-lg":"1.25rem","space-xl":"1.75rem","space-md":"0.75rem","margin":"1rem"},"fontFamily":{"body-lg":["Inter"],"label-caps":["JetBrains Mono"],"mono-data-md":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"mono-data-sm":["JetBrains Mono"],"mono-data-lg":["JetBrains Mono"],"body-sm":["Inter"],"headline-xl":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-md":["Inter"],"headline-xl-mobile":["Space Grotesk"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"mono-data-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"mono-data-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"mono-data-lg":["16px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[280px]"><img alt="Cyber Intelligence Grid Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U4w2jU5NLLbE6180QFfXq5YXgGKnu1HcuvkguQ0aB3P_k8bla8CIanali6c6HI53gWCfwfuA0s4E0q1o6Ozr2d3TGdokB41dYwP3SUMpOthS211HH3L5y4YvpkffboBwOxRt7lzfzW6YqsSCiRR-2fSpuYkRbY-tPBuKXtTa_y1apqBnXLtC1hcvS-qaep69onf2khr1BnJZyLMHDMH18Bq6cq3BM0dwO0F0ROfSpAROXf7RYdVQyq8fg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-bold leading-none">CYBER INTELLIGENCE GRID</span><span class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase mt-1">I4C // PREDICTIVE ANALYTICS PLATFORM</span></div></div><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">DATA STREAM (4.2k/s)</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">ML ENGINE (ONLINE)</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">GIS ENGINE (READY)</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">ALERT ENGINE (ACTIVE)</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center px-space-sm py-1 rounded bg-surface-container-high"><span class="font-mono-data-sm text-mono-data-sm text-primary font-semibold">20:14:32 IST</span></div><div class="relative flex items-center justify-center p-space-xs text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-0 right-0 inline-flex items-center justify-center px-1 py-0.2 rounded-full font-label-caps text-[9px] bg-error-container text-on-error-container font-bold">3</span></div><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase font-medium">INSP. R. VERMA // LEAD ANALYST</span></div><div class="hidden sm:flex items-center px-space-sm py-1 rounded bg-tertiary-container"><span class="font-label-caps text-label-caps text-on-tertiary-container uppercase font-bold tracking-wider">DEMO MODE: SYNTHETIC DATA</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md flex flex-col"><div class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase px-space-sm mb-space-sm">OPERATIONAL INTEL</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="command-center" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">COMMAND CENTER</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="live-cases" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">LIVE CASES</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="predictions" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">PREDICTIONS</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="network-intelligence" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">NETWORK INTELLIGENCE</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="risk-map" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">RISK MAP</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="alert-center" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">ALERT CENTER</span></a><a aria-current="page" class="flex items-center px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="investigations" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">INVESTIGATIONS</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="simulations" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">SIMULATIONS</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="analytics" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">ANALYTICS</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="model-monitor" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">MODEL MONITOR</span></a><div class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase px-space-sm mt-space-md mb-space-sm">SYSTEM</div><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="audit-log" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">AUDIT LOG</span></a><a class="flex items-center px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" data-path="settings" href="#"><span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wide">SETTINGS</span></a></nav></div><div class="p-space-md bg-surface-container-low m-space-sm rounded flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">System Status</span><span class="font-label-caps text-label-caps text-primary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>ONLINE</span></div><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Model</span><span class="font-mono-data-sm text-mono-data-sm text-on-surface truncate">cashout-risk-v1</span></div><div class="mt-space-xs flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Env</span><span class="px-1.5 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps font-bold">SYNTHETIC / DEMO</span></div><div class="mt-space-sm pt-space-xs text-center"><span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">[CTRL + K] COMMAND PALETTE</span></div></div></aside><div class="pl-64"><main class="w-full pt-16 px-margin min-h-screen bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- Case Master Header Ribbon -->
+<div class="w-full bg-surface-container-lowest p-space-md shadow-md mb-gutter flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="p-1.5 rounded bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</span>
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">CASE INVESTIGATION // CYB-28491</h1>
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">CRIMINAL INTEL PIPELINE • INCIDENT DIRECTORY 2024-Q3</span>
+</div>
+</div>
+<!-- Tactical Status Badges -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="h-5 px-1.5 rounded flex items-center gap-1 font-label-caps text-label-caps bg-primary/10 text-primary uppercase font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>STATUS: ACTIVE
+        </span>
+<span class="h-5 px-1.5 rounded flex items-center gap-1 font-label-caps text-label-caps bg-error-container text-on-error-container uppercase font-bold">
+<span class="material-symbols-outlined text-[13px]">warning</span>RISK: HIGH ▲
+        </span>
+<span class="h-5 px-1.5 rounded flex items-center gap-1 font-label-caps text-label-caps bg-surface-container-high text-on-surface font-mono-data-sm">
+          AMOUNT: ₹2,45,000
+        </span>
+<span class="h-5 px-1.5 rounded flex items-center gap-1 font-label-caps text-label-caps bg-surface-container-high text-on-surface-variant">
+          INVESTIGATOR: INSP. R. VERMA
+        </span>
+<span class="h-5 px-1.5 rounded flex items-center gap-1 font-label-caps text-label-caps bg-tertiary-container text-on-tertiary-container font-semibold">
+          SOURCE: NCRP / SYNTHETIC
+        </span>
+</div>
+</div>
+<!-- Analytical Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pt-space-xs">
+<button class="px-space-md py-1.5 bg-primary-container text-on-primary-container font-label-caps text-label-caps tracking-wider rounded font-bold uppercase transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+        CASE INTELLIGENCE
+      </button>
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps tracking-wider rounded font-medium uppercase transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">hub</span>
+        FRAUD NETWORK
+      </button>
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps tracking-wider rounded font-medium uppercase transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">neurology</span>
+        PREDICTION & SIGNALS
+      </button>
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps tracking-wider rounded font-medium uppercase transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">timeline</span>
+        TIMELINE & OUTCOMES
+      </button>
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps tracking-wider rounded font-medium uppercase transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">quick_reference</span>
+        AUDIT & NOTES
+      </button>
+</div>
+</div>
+<!-- Main 3-Column Tactical Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-gutter">
+<!-- LEFT COLUMN (~25% / col-span-3): Case Profile & Realtime Signals -->
+<div class="lg:col-span-3 flex flex-col gap-gutter">
+<!-- Golden Hour Countdown Component -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-lg relative overflow-hidden">
+<div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-error-container/20 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px] animate-pulse">timer</span>
+<span class="font-label-caps text-label-caps text-error tracking-wider uppercase font-bold">GOLDEN HOUR RUNNING</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-mono-data-sm text-[10px] font-bold">CRITICAL</span>
+</div>
+<div class="py-space-xs text-center my-space-xs rounded bg-surface-container-high/60">
+<div class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">CASH-OUT WINDOW COUNTDOWN</div>
+<div class="font-mono-data-lg text-headline-lg font-bold text-error tracking-widest my-1" id="countdown-timer">
+            00:18:32
+          </div>
+<span class="font-label-caps text-[10px] text-on-surface-variant">REMAINING TO CASH-OUT TERMINATION</span>
+</div>
+<div class="space-y-1.5 text-body-sm pt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-mono-data-sm">
+<span>Window Projection:</span>
+<span class="text-on-surface font-semibold">19:40 — 20:20 IST</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-mono-data-sm">
+<span>Risk Velocity:</span>
+<span class="text-error font-bold">91%</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-mono-data-sm">
+<span>Confidence Index:</span>
+<span class="text-primary font-bold">78%</span>
+</div>
+</div>
+<div class="mt-space-sm p-space-xs bg-surface-container rounded text-on-surface-variant text-[11px] leading-tight flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[14px] shrink-0 mt-0.5">verified_user</span>
+<span><strong>MODEL ESTIMATE (cashout-risk-v1):</strong> Active telemetry demands physical patrol intercept prior to immediate withdrawal.</span>
+</div>
+</div>
+<!-- Case Metadata Card -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">fingerprint</span>METADATA LEDGER
+          </span>
+<span class="font-mono-data-sm text-[11px] text-on-surface-variant">NODE: PRI-01</span>
+</div>
+<div class="space-y-space-xs font-mono-data-sm text-body-sm">
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant block text-[10px] uppercase font-label-caps">Complaint ID</span>
+<span class="text-on-surface font-bold text-mono-data-md">CYB-28491</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant block text-[10px] uppercase font-label-caps">Reported Timestamp</span>
+<span class="text-on-surface">Today, 19:01:24 IST (41m ago)</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant block text-[10px] uppercase font-label-caps">Fraud Classification</span>
+<span class="text-error font-medium">UPI Impersonation & Instant Loan</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant block text-[10px] uppercase font-label-caps">Victim Persona</span>
+<span class="text-on-surface">S*** K*** (+91 98******10, New Delhi)</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant block text-[10px] uppercase font-label-caps">Initial Loss Exposure</span>
+<span class="text-primary font-semibold">₹2,45,000 <span class="text-on-surface-variant text-[11px] font-normal">(3 rapid layering stages)</span></span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant block text-[10px] uppercase font-label-caps">Primary Mule Account</span>
+<span class="text-on-surface">ICICI Bank (A/C: ****4821)</span>
+<span class="block text-[10px] text-on-surface-variant">IFSC: ICIC0000102</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant block text-[10px] uppercase font-label-caps">Suspect Ingress Geolocation</span>
+<span class="text-tertiary-fixed font-mono-data-sm">103.21.***.45</span>
+<span class="block text-[10px] text-on-surface-variant">Cloudflare Proxy // Jamtara Tower Cluster</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-caps text-label-caps tracking-wider uppercase transition flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span>EXPORT FORENSIC DOSSIER
+        </button>
+</div>
+<!-- Quick Intercept Readiness Widget -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Field Vector Units</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="space-y-1 text-mono-data-sm">
+<div class="flex items-center justify-between p-1 rounded bg-surface-container">
+<span class="text-on-surface">PCR Van 14 (Central)</span>
+<span class="text-primary text-[10px] font-bold">ETA 4 MIN</span>
+</div>
+<div class="flex items-center justify-between p-1 rounded bg-surface-container">
+<span class="text-on-surface">Beat Officer #209</span>
+<span class="text-tertiary text-[10px]">ON FOOT // 600m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CENTER COLUMN (~45% / col-span-5): Interactive Fraud Network Graph -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<div class="bg-surface-container-lowest rounded shadow-lg flex flex-col relative overflow-hidden h-[620px]">
+<!-- Graph Workspace Toolbar -->
+<div class="px-space-md py-space-xs bg-surface-container flex items-center justify-between z-10">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">device_hub</span>FRAUD TOPOLOGY GRAPH
+            </span>
+<span class="font-mono-data-sm text-[10px] text-on-surface-variant px-1 rounded bg-surface-container-low">CANVAS: FORCE-DIRECTED</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-6 h-6 rounded bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface flex items-center justify-center transition" id="zoom-in-btn" title="Zoom In">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+<button class="w-6 h-6 rounded bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface flex items-center justify-center transition" id="zoom-out-btn" title="Zoom Out">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<button class="w-6 h-6 rounded bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface flex items-center justify-center transition" id="reset-view-btn" title="Fit View">
+<span class="material-symbols-outlined text-[14px]">center_focus_strong</span>
+</button>
+<button class="px-1.5 py-0.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-caps text-[10px] uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">filter_list</span>FILTERS
+            </button>
+</div>
+</div>
+<!-- React Flow Canvas Simulator -->
+<div class="relative flex-1 bg-surface-container-lowest overflow-hidden cursor-grab active:cursor-grabbing select-none" id="network-canvas" style="background-image: radial-gradient(rgba(195, 245, 255, 0.08) 1px, transparent 1px); background-size: 24px 24px;">
+<!-- Node Legend Overlay -->
+<div class="absolute top-2 left-2 z-10 bg-surface-container-low/90 backdrop-blur-md p-space-xs rounded shadow-md max-w-xs">
+<span class="block font-label-caps text-[9px] uppercase tracking-wider text-on-surface-variant mb-1 font-bold">TOPOLOGY CLASSIFIERS</span>
+<div class="grid grid-cols-2 gap-x-2 gap-y-1 font-mono-data-sm text-[10px]">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Victim Entity</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>L1 Layer Mule</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Predicted Cashout</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Correlated Telco</span>
+</div>
+</div>
+</div>
+<!-- SVG Link Network Connections -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="grad-layer1" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#4cd6fb" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#ffb95f" stop-opacity="0.8"></stop>
+</lineargradient>
+<lineargradient id="grad-layer2" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ffb95f" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#ffb4ab" stop-opacity="0.9"></stop>
+</lineargradient>
+</defs>
+<!-- Line: Victim -> Mule L1 -->
+<line stroke="url(#grad-layer1)" stroke-dasharray="4 2" stroke-width="2" x1="80" x2="220" y1="120" y2="180"></line>
+<!-- Line: Mule L1 -> Phone -->
+<line stroke="#ffb95f" stroke-width="1.5" x1="220" x2="170" y1="180" y2="330"></line>
+<!-- Line: Mule L1 -> Mule L2 -->
+<line stroke="url(#grad-layer2)" stroke-width="2.5" x1="220" x2="360" y1="180" y2="210"></line>
+<!-- Line: Phone -> Device -->
+<line stroke="#c3f5ff" stroke-dasharray="3 3" stroke-width="1.5" x1="170" x2="270" y1="330" y2="430"></line>
+<!-- Line: Mule L2 -> ATM Cashout 042 (High Risk Predicted) -->
+<line stroke="#ffb4ab" stroke-width="3" x1="360" x2="380" y1="210" y2="370"></line>
+<!-- Line: ATM 042 -> ATM 018 (Neighbor Fallback) -->
+<line stroke="#00e5ff" stroke-dasharray="2 4" stroke-width="1.5" x1="380" x2="440" y1="370" y2="470"></line>
+</svg>
+<!-- Edge Annotations (React Flow style pill labels) -->
+<div class="absolute top-[138px] left-[105px] z-10 bg-surface-container-high px-1.5 py-0.5 rounded text-[9px] font-mono-data-sm text-secondary-container shadow-sm pointer-events-none">
+            transacted_with ₹2.45L
+          </div>
+<div class="absolute top-[260px] left-[345px] z-10 bg-error-container/80 px-1.5 py-0.5 rounded text-[9px] font-mono-data-sm text-on-error-container shadow-sm pointer-events-none">
+            predicted_cashout_at (0.8km)
+          </div>
+<!-- NODE 1: Victim Node -->
+<div class="absolute top-[90px] left-[30px] z-10 flex flex-col items-center group cursor-pointer transition-transform hover:scale-105">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shadow-lg group-hover:shadow-primary/50 relative">
+<span class="material-symbols-outlined text-secondary text-[20px]">person</span>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<span class="mt-1 font-mono-data-sm text-[10px] text-on-surface font-semibold bg-surface-container-low px-1.5 py-0.5 rounded">
+              Victim (S.K.)
+            </span>
+<span class="font-label-caps text-[8px] text-on-surface-variant">INITIATOR</span>
+</div>
+<!-- NODE 2: Mule L1 (Selected in Preview) -->
+<div class="absolute top-[150px] left-[175px] z-20 flex flex-col items-center group cursor-pointer transition-transform hover:scale-105" id="mule-node-l1">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shadow-xl relative animate-pulse">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px]">account_balance</span>
+<span class="absolute -top-1 -right-1 px-1 rounded-full bg-tertiary-container text-on-tertiary-container text-[8px] font-bold">L1</span>
+</div>
+<span class="mt-1 font-mono-data-sm text-[10px] text-tertiary-fixed-dim font-bold bg-surface-container-high px-1.5 py-0.5 rounded">
+              Mule A/C #4821 (R. Kumar)
+            </span>
+<span class="font-label-caps text-[8px] text-tertiary-fixed">TARGET ACC // ACTIVE INTERCEPT</span>
+</div>
+<!-- NODE 3: Correlated Telco / Phone -->
+<div class="absolute top-[300px] left-[120px] z-10 flex flex-col items-center group cursor-pointer transition-transform hover:scale-105">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary text-[18px]">smartphone</span>
+</div>
+<span class="mt-1 font-mono-data-sm text-[9px] text-on-surface bg-surface-container-low px-1 rounded">
+              +91 9811*** (IMEI-4481)
+            </span>
+</div>
+<!-- NODE 4: Mule L2 (Crimson Risk Ring) -->
+<div class="absolute top-[180px] left-[320px] z-10 flex flex-col items-center group cursor-pointer transition-transform hover:scale-105">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center shadow-lg relative">
+<span class="material-symbols-outlined text-error text-[22px]">swap_horiz</span>
+<span class="absolute -top-1 -right-1 px-1 rounded-full bg-error-container text-on-error-container text-[8px] font-bold">L2</span>
+</div>
+<span class="mt-1 font-mono-data-sm text-[10px] text-error font-semibold bg-surface-container-low px-1.5 py-0.5 rounded">
+              Mule A/C #9012 (S. Devi)
+            </span>
+<span class="font-label-caps text-[8px] text-on-surface-variant">IMMEDIATE WITHDRAWAL ROUTE</span>
+</div>
+<!-- NODE 5: Device Node -->
+<div class="absolute top-[410px] left-[220px] z-10 flex flex-col items-center group cursor-pointer transition-transform hover:scale-105">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">devices_other</span>
+</div>
+<span class="mt-1 font-mono-data-sm text-[9px] text-on-surface-variant bg-surface-container-low px-1 rounded">
+              Poco F3 (#df-992)
+            </span>
+</div>
+<!-- NODE 6: Target ATM Node (High Risk Pulsing Alert Node) -->
+<div class="absolute top-[340px] left-[330px] z-20 flex flex-col items-center group cursor-pointer transition-transform hover:scale-110">
+<div class="relative">
+<span class="absolute -inset-1 rounded-full bg-error animate-ping opacity-75"></span>
+<div class="w-14 h-14 rounded-full bg-error-container flex items-center justify-center shadow-xl relative">
+<span class="material-symbols-outlined text-on-error-container text-[26px]">atm</span>
+</div>
+</div>
+<span class="mt-1 font-mono-data-sm text-[11px] text-error font-bold bg-surface-container-high px-2 py-0.5 rounded shadow">
+              ATM-DEL-042 (Connaught Place E-Lobby)
+            </span>
+<span class="font-label-caps text-[9px] text-on-error-container bg-error px-1 rounded uppercase font-bold mt-0.5">
+              91% RISK PROBABILITY
+            </span>
+</div>
+<!-- NODE 7: Neighbor ATM Node (Barakhamba) -->
+<div class="absolute top-[440px] left-[400px] z-10 flex flex-col items-center group cursor-pointer transition-transform hover:scale-105">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_atm</span>
+</div>
+<span class="mt-1 font-mono-data-sm text-[9px] text-secondary font-medium bg-surface-container-low px-1 rounded">
+              ATM-DEL-018 (Barakhamba Rd)
+            </span>
+<span class="font-label-caps text-[8px] text-on-surface-variant">SECONDARY FALLBACK // 76%</span>
+</div>
+</div>
+<!-- Node Inspector Floating Drawer Preview -->
+<div class="bg-surface-container-high p-space-sm flex flex-col gap-1 z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase font-bold">SELECTED INSPECTOR: Mule A/C #4821</span>
+</div>
+<span class="font-mono-data-sm text-[10px] text-error font-bold bg-error-container/40 text-on-error px-1.5 rounded">PMLA SEC-12 FLAGGED</span>
+</div>
+<p class="text-body-sm text-on-surface-variant font-mono-data-sm text-[11px] leading-relaxed">
+            Entity mapped to 3 active cyber-syndicate complaints across Delhi & Haryana circles. Account opened via compromised biometric verification kiosk in Jamtara periphery.
+          </p>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (~30% / col-span-4): Prediction Explanation & Model Signals -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<!-- Model Contributing Signals Card -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">query_stats</span>WHY THIS LOCATION?
+            </h2>
+<span class="font-mono-data-sm text-[10px] text-on-surface-variant">MODEL CONTRIBUTING SIGNALS</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-mono-data-sm text-[11px] font-bold">
+            CONFIDENCE 78%
+          </span>
+</div>
+<!-- Feature Contribution Horizontal Bar Breakdown -->
+<div class="space-y-space-sm pt-space-xs">
+<!-- Signal 1 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between text-mono-data-sm text-[11px]">
+<span class="text-on-surface truncate pr-2 font-medium">1. Historical ATM Proximity (Mule patterns)</span>
+<span class="text-primary font-bold shrink-0">+34%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded transition-all duration-700" style="width: 85%;"></div>
+</div>
+<span class="text-on-surface-variant text-[10px] block">Mule collective previously liquidated 8 tranches in CP zone</span>
+</div>
+<!-- Signal 2 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between text-mono-data-sm text-[11px]">
+<span class="text-on-surface truncate pr-2 font-medium">2. Temporal Similarity (35-50m cashout lag)</span>
+<span class="text-primary font-bold shrink-0">+26%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded transition-all duration-700" style="width: 65%;"></div>
+</div>
+<span class="text-on-surface-variant text-[10px] block">Optimal transit time fits current clock cycle: 19:40-20:20 IST</span>
+</div>
+<!-- Signal 3 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between text-mono-data-sm text-[11px]">
+<span class="text-on-surface truncate pr-2 font-medium">3. Network Proximity (Delhi Central cell-tower ping)</span>
+<span class="text-primary font-bold shrink-0">+19%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded transition-all duration-700" style="width: 48%;"></div>
+</div>
+<span class="text-on-surface-variant text-[10px] block">Correlated burner IMEI registered in Barakhamba radius</span>
+</div>
+<!-- Signal 4 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between text-mono-data-sm text-[11px]">
+<span class="text-on-surface truncate pr-2 font-medium">4. Local Hotspot Density (High-volume ATM cluster)</span>
+<span class="text-on-surface-variant font-bold shrink-0">+13%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded transition-all duration-700" style="width: 32%;"></div>
+</div>
+<span class="text-on-surface-variant text-[10px] block">Unmonitored multi-machine vestibule with quick metro access</span>
+</div>
+<!-- Signal 5 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between text-mono-data-sm text-[11px]">
+<span class="text-on-surface truncate pr-2 font-medium">5. Day-of-Week Tendency (Friday night surge)</span>
+<span class="text-on-surface-variant font-bold shrink-0">+8%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-outline rounded transition-all duration-700" style="width: 20%;"></div>
+</div>
+<span class="text-on-surface-variant text-[10px] block">Syndicates exploit weekend bank non-operational latency</span>
+</div>
+</div>
+</div>
+<!-- Top 3 Predicted ATMs -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-md flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase font-bold">
+          TOP PREDICTED CASHOUT NODES
+        </span>
+<div class="space-y-1.5 mt-1">
+<!-- ATM 1 -->
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between shadow-sm">
+<div class="min-w-0 pr-1">
+<div class="flex items-center gap-1">
+<span class="font-mono-data-sm text-[11px] font-bold text-error">1. ATM-DEL-042</span>
+<span class="px-1 py-0.2 rounded bg-error-container text-on-error-container font-label-caps text-[8px] font-bold">PRIMARY</span>
+</div>
+<span class="block text-body-sm text-[11px] text-on-surface truncate">Connaught Place Inner Circle E-Lobby</span>
+<span class="font-mono-data-sm text-[10px] text-on-surface-variant">0.8 km distance • High cash reserve</span>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-error font-bold leading-tight block">91%</span>
+<span class="font-label-caps text-[8px] text-on-surface-variant">RISK FACTOR</span>
+</div>
+</div>
+<!-- ATM 2 -->
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between">
+<div class="min-w-0 pr-1">
+<span class="font-mono-data-sm text-[11px] font-semibold text-primary">2. ATM-DEL-018</span>
+<span class="block text-body-sm text-[11px] text-on-surface truncate">Barakhamba Rd Metro Concourse</span>
+<span class="font-mono-data-sm text-[10px] text-on-surface-variant">1.4 km distance • High footfall</span>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold leading-tight block">76%</span>
+<span class="font-label-caps text-[8px] text-on-surface-variant">RISK FACTOR</span>
+</div>
+</div>
+<!-- ATM 3 -->
+<div class="p-space-xs rounded bg-surface-container flex items-center justify-between opacity-80">
+<div class="min-w-0 pr-1">
+<span class="font-mono-data-sm text-[11px] font-medium text-on-surface-variant">3. ATM-GGN-102</span>
+<span class="block text-body-sm text-[11px] text-on-surface truncate">Cyber City Phase 2 Hub</span>
+<span class="font-mono-data-sm text-[10px] text-on-surface-variant">18.2 km distance • Layer 2 fallback</span>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-bold leading-tight block">69%</span>
+<span class="font-label-caps text-[8px] text-on-surface-variant">RISK FACTOR</span>
+</div>
+</div>
+</div>
+<!-- Simulator Execution CTA Button -->
+<button class="mt-space-xs w-full py-space-sm bg-primary-container text-on-primary-container hover:bg-primary font-mono-data-md font-bold uppercase rounded shadow-lg transition-all flex items-center justify-center gap-2 group">
+<span>INTERVENTION SIMULATOR</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- BOTTOM FULL-WIDTH WORKSPACE: Investigation Timeline Stepper -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded shadow-lg mb-gutter">
+<div class="flex items-center justify-between mb-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="p-1 rounded bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">history_toggle_off</span>
+</span>
+<h3 class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-widest">
+          INCIDENT TELEMETRY & MITIGATION TIMELINE (CYB-28491)
+        </h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-mono-data-sm text-[10px] text-on-surface-variant">REAL-TIME PROPAGATION SPEED: 1.4s</span>
+</div>
+</div>
+<!-- Stepper Pipeline Track -->
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-space-xs relative">
+<!-- Step 1 -->
+<div class="p-space-xs rounded bg-surface-container relative flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-[10px] text-primary font-bold">19:01 IST</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-mono-data-sm text-[11px] font-semibold text-on-surface leading-tight">Complaint Received</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">NCRP API Ingestion #28491</span>
+</div>
+<!-- Step 2 -->
+<div class="p-space-xs rounded bg-surface-container relative flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-[10px] text-primary font-bold">19:03 IST</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-mono-data-sm text-[11px] font-semibold text-on-surface leading-tight">Layer 1 Detected</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">₹2.45L moved to ICICI</span>
+</div>
+<!-- Step 3 -->
+<div class="p-space-xs rounded bg-surface-container relative flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-[10px] text-primary font-bold">19:05 IST</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-mono-data-sm text-[11px] font-semibold text-on-surface leading-tight">Mule Correlated</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">A/C #4821 linked to syndicate</span>
+</div>
+<!-- Step 4 -->
+<div class="p-space-xs rounded bg-surface-container relative flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-[10px] text-primary font-bold">19:07 IST</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-mono-data-sm text-[11px] font-semibold text-on-surface leading-tight">Topology Expanded</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">+4 Associated Nodes Synced</span>
+</div>
+<!-- Step 5 -->
+<div class="p-space-xs rounded bg-surface-container relative flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-[10px] text-primary font-bold">19:08 IST</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-mono-data-sm text-[11px] font-semibold text-on-surface leading-tight">Prediction Output</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">Spatio-Temporal Model v1</span>
+</div>
+<!-- Step 6 -->
+<div class="p-space-xs rounded bg-error-container text-on-error-container relative flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-[10px] font-bold">19:09 IST</span>
+<span class="material-symbols-outlined text-[14px]">warning</span>
+</div>
+<span class="font-mono-data-sm text-[11px] font-bold leading-tight">Critical Alert Dispatched</span>
+<span class="font-label-caps text-[9px] opacity-90">Auto Broadcast to Delhi PCR</span>
+</div>
+<!-- Step 7 -->
+<div class="p-space-xs rounded bg-surface-container-high relative flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-data-sm text-[10px] text-primary font-bold">19:18 IST</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+</div>
+<span class="font-mono-data-sm text-[11px] font-bold text-primary leading-tight">Unit Dispatched</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">PCR Van 14 en route to ATM-042</span>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Micro-Interactions -->
+<script>
+    (function initCaseOperations() {
+      // Countdown simulation logic
+      let secondsRemaining = 18 * 60 + 32;
+      const timerElement = document.getElementById('countdown-timer');
+
+      if (timerElement) {
+        setInterval(() => {
+          if (secondsRemaining > 0) {
+            secondsRemaining--;
+            const mins = Math.floor(secondsRemaining / 60);
+            const secs = secondsRemaining % 60;
+            timerElement.textContent = `00:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+          }
+        }, 1000);
+      }
+
+      // Graph interactive control simulation
+      const canvas = document.getElementById('network-canvas');
+      const zoomIn = document.getElementById('zoom-in-btn');
+      const zoomOut = document.getElementById('zoom-out-btn');
+      const resetView = document.getElementById('reset-view-btn');
+      let currentScale = 1.0;
+
+      if (zoomIn && canvas) {
+        zoomIn.addEventListener('click', () => {
+          currentScale = Math.min(currentScale + 0.15, 1.6);
+          canvas.style.transform = `scale(${currentScale})`;
+          canvas.style.transformOrigin = 'center center';
+          canvas.style.transition = 'transform 0.2s ease-out';
+        });
+      }
+
+      if (zoomOut && canvas) {
+        zoomOut.addEventListener('click', () => {
+          currentScale = Math.max(currentScale - 0.15, 0.7);
+          canvas.style.transform = `scale(${currentScale})`;
+          canvas.style.transformOrigin = 'center center';
+          canvas.style.transition = 'transform 0.2s ease-out';
+        });
+      }
+
+      if (resetView && canvas) {
+        resetView.addEventListener('click', () => {
+          currentScale = 1.0;
+          canvas.style.transform = 'scale(1.0)';
+          canvas.style.transition = 'transform 0.2s ease-out';
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

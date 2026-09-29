@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>I4C // Predictive Cash-Out Intelligence Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "primary-fixed": "#9cf0ff",
+        "tertiary": "#ffe9d3",
+        "primary-container": "#00e5ff",
+        "secondary-container": "#00b2d6",
+        "surface": "#101418",
+        "on-primary": "#00363d",
+        "secondary-fixed": "#b3ebff",
+        "primary": "#c3f5ff",
+        "on-error": "#690005",
+        "secondary-fixed-variant": "#004e5f",
+        "background": "#101418",
+        "secondary-fixed-dim": "#4cd6fb",
+        "on-tertiary-container": "#7e4e00",
+        "on-surface": "#e0e2e9",
+        "outline-variant": "#3b494c",
+        "on-primary-container": "#00626e",
+        "error-container": "#93000a",
+        "on-error-container": "#ffdad6",
+        "surface-container": "#1c2024",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-background": "#e0e2e9",
+        "inverse-surface": "#e0e2e9",
+        "on-primary-fixed": "#001f24",
+        "inverse-primary": "#006875",
+        "tertiary-fixed": "#ffddb8",
+        "surface-dim": "#101418",
+        "surface-variant": "#31353a",
+        "error": "#ffb4ab",
+        "on-tertiary-fixed-variant": "#653e00",
+        "surface-tint": "#00daf3",
+        "inverse-on-surface": "#2d3136",
+        "on-secondary-container": "#003f4e",
+        "outline": "#849396",
+        "secondary": "#4cd6fb",
+        "surface-container-lowest": "#0b0f13",
+        "on-surface-variant": "#bac9cc",
+        "on-tertiary-fixed": "#2a1700",
+        "surface-container-high": "#272a2f",
+        "surface-bright": "#36393e",
+        "on-secondary-fixed": "#001f27",
+        "tertiary-container": "#ffc681",
+        "on-secondary": "#003642",
+        "surface-container-highest": "#31353a",
+        "surface-container-low": "#181c20",
+        "primary-fixed-dim": "#00daf3",
+        "on-primary-fixed-variant": "#004f58",
+        "on-tertiary": "#472a00"
+      },
+      "borderRadius": {"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+      "spacing": {"space-sm":"0.5rem","space-xs":"0.25rem","gutter":"0.75rem","space-lg":"1.25rem","space-xl":"1.75rem","space-md":"0.75rem","margin":"1rem"},
+      "fontFamily": {
+        "body-lg":["Inter"],"label-caps":["JetBrains Mono"],"mono-data-md":["JetBrains Mono"],
+        "headline-lg":["Space Grotesk"],"mono-data-sm":["JetBrains Mono"],"mono-data-lg":["JetBrains Mono"],
+        "body-sm":["Inter"],"headline-xl":["Space Grotesk"],"headline-sm":["Space Grotesk"],
+        "body-md":["Inter"],"headline-xl-mobile":["Space Grotesk"]
+      },
+      "fontSize": {
+        "body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],
+        "label-caps":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],
+        "mono-data-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"500"}],
+        "headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],
+        "mono-data-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],
+        "mono-data-lg":["16px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}],
+        "body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],
+        "headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],
+        "headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],
+        "body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],
+        "headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}]
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container/30">
+
+<div id="bootscreen" class="min-h-screen flex items-center justify-center">
+  <div class="text-center">
+    <div class="font-mono-data-sm text-primary/70 tracking-[0.3em] mb-4">CYBER INTELLIGENCE GRID</div>
+    <div class="inline-block animate-pulse text-primary-container font-headline-xl">INITIALIZING…</div>
+  </div>
+</div>
+
+<!-- ===================== LOGIN ===================== -->
+<section id="view-login" class="hidden min-h-screen flex items-center justify-center px-4">
+  <div class="w-full max-w-md border border-outline-variant bg-surface-container rounded-xl p-8 relative overflow-hidden">
+    <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary-container/70 to-transparent"></div>
+    <div class="flex items-center gap-3 mb-8">
+      <div class="w-10 h-10 rounded-full border border-primary-container/40 flex items-center justify-center text-primary-container">
+        <span class="material-symbols-outlined text-2xl">grid_view</span>
+      </div>
+      <div>
+        <div class="font-headline-sm">I4C // PREDICTIVE ANALYTICS</div>
+        <div class="font-label-caps text-on-surface-variant mt-0.5">CYBER INTELLIGENCE GRID</div>
+      </div>
+    </div>
+    <div class="font-label-caps text-primary/80 mb-6">SECURE L2 AUTHENTICATION</div>
+    <label class="block mb-4">
+      <span class="font-label-caps text-on-surface-variant">ANALYST EMAIL</span>
+      <input id="login-email" autocomplete="username" required
+             class="mt-2 w-full bg-surface-dim border border-outline-variant rounded px-3 py-2.5 font-mono-data-md text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container"/>
+    </label>
+    <label class="block mb-6">
+      <span class="font-label-caps text-on-surface-variant">PASSWORD</span>
+      <input id="login-password" type="password" autocomplete="current-password" required
+             class="mt-2 w-full bg-surface-dim border border-outline-variant rounded px-3 py-2.5 font-mono-data-md text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container"/>
+    </label>
+    <div id="login-error" class="hidden mb-4 font-body-sm text-error"></div>
+    <button id="login-submit"
+            class="w-full bg-primary-container text-on-primary-container font-label-caps tracking-wider rounded px-4 py-3 hover:brightness-110 active:scale-[0.99] transition disabled:opacity-50">
+      AUTHENTICATE →
+    </button>
+    <div class="mt-6 flex items-center justify-between font-mono-data-sm text-on-surface-variant">
+      <span id="login-api" class="truncate pr-3"></span>
+      <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>GATEWAY: I4C-SEC-MESH</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APP CHROME ===================== -->
+<div id="app" class="hidden min-h-screen">
+  <div class="flex min-h-screen">
+
+    <!-- LEFT RAIL -->
+    <aside class="w-56 shrink-0 border-r border-outline-variant/70 bg-surface-container-low hidden lg:flex flex-col">
+      <div class="px-4 pt-5 pb-4 flex items-center gap-3 border-b border-outline-variant/40">
+        <div class="w-9 h-9 rounded-full border border-primary-container/50 flex items-center justify-center text-primary-container">
+          <span class="material-symbols-outlined text-xl">grid_view</span>
+        </div>
+        <div>
+          <div class="font-headline-sm leading-none">I4C // PREDICTIVE</div>
+          <div class="font-label-caps text-on-surface-variant mt-1.5">CYBER INTELLIGENCE GRID</div>
+        </div>
+      </div>
+
+      <nav class="flex-1 px-2 py-4 space-y-1.5" id="main-nav">
+        <button data-nav="dashboard" class="nav-pill w-full flex items-center gap-3 rounded px-3 py-2.5 font-label-caps text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition text-left">
+          <span class="material-symbols-outlined text-lg">dashboard</span>COMMAND CENTER
+        </button>
+        <button data-nav="cases" class="nav-pill w-full flex items-center gap-3 rounded px-3 py-2.5 font-label-caps text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition text-left">
+          <span class="material-symbols-outlined text-lg">fingerprint</span>INVESTIGATIONS
+        </button>
+        <button data-nav="sim" class="nav-pill w-full flex items-center gap-3 rounded px-3 py-2.5 font-label-caps text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition text-left">
+          <span class="material-symbols-outlined text-lg">model_training</span>INTERVENTION SIMULATOR
+        </button>
+        <button data-nav="audit" class="nav-pill w-full flex items-center gap-3 rounded px-3 py-2.5 font-label-caps text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition text-left">
+          <span class="material-symbols-outlined text-lg">verified_user</span>AUDIT LOG
+        </button>
+      </nav>
+
+      <div class="px-4 py-4 border-t border-outline-variant/40 space-y-2">
+        <div class="flex items-center gap-2 font-mono-data-sm text-on-surface-variant" id="rail-user">
+          <span class="material-symbols-outlined text-base">account_circle</span><span class="truncate">—</span>
+        </div>
+        <div class="flex items-center gap-2 font-mono-data-sm text-secondary">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>ALERT ENGINE (ACTIVE)
+        </div>
+        <div class="flex items-center gap-2 font-mono-data-sm text-tertiary-fixed-dim">
+          <span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>GIS ENGINE (READY)
+        </div>
+        <div id="rail-mode" class="font-label-caps text-on-surface-variant pt-1">DEMO MODE</div>
+      </div>
+    </aside>
+
+    <!-- MAIN COLUMN -->
+    <div class="flex-1 flex flex-col min-w-0">
+      <header class="h-14 shrink-0 border-b border-outline-variant/70 bg-surface-container-low flex items-center justify-between px-4 gap-4">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="lg:hidden w-9 h-9 rounded-full border border-primary-container/50 flex items-center justify-center text-primary-container"><span class="material-symbols-outlined text-xl">grid_view</span></div>
+          <div>
+            <h1 id="page-title" class="font-headline-lg truncate">COMMAND CENTER</h1>
+            <div id="page-sub" class="font-mono-data-sm text-on-surface-variant hidden sm:block">GLOBAL THREAT OVERVIEW</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <div id="api-status" class="hidden items-center gap-2 font-mono-data-sm text-on-surface-variant">
+            <span class="w-1.5 h-1.5 rounded-full bg-error"></span><span class="hidden md:inline">API</span>
+          </div>
+          <div id="live-clock" class="font-mono-data-md text-primary hidden md:block"></div>
+          <div class="hidden sm:flex items-center gap-1.5 font-mono-data-sm text-on-surface-variant border border-outline-variant rounded-full px-3 py-1.5" id="session-chip"></div>
+          <button id="logout-btn" class="flex items-center gap-1.5 font-label-caps text-on-surface-variant hover:text-error transition px-2 py-1.5">
+            <span class="material-symbols-outlined text-lg">logout</span><span class="hidden sm:inline">EXIT</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="view-root" class="flex-1 min-w-0 p-4 sm:p-5 space-y-5 overflow-y-auto">
+        <!-- views injected by app.js -->
+      </main>
+    </div>
+  </div>
+</div>
+
+<div id="toast-root" class="fixed bottom-4 right-4 z-50 space-y-2 w-80 max-w-[calc(100vw-2rem)]"></div>
+
+<button id="fab-sim" class="hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-40 items-center gap-2 bg-primary-container text-on-primary-container font-label-caps rounded-full px-5 py-3 shadow-lg shadow-primary-container/20 hover:brightness-110 transition">
+  <span class="material-symbols-outlined text-lg">model_training</span>RUN INTERVENTION SIM
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>

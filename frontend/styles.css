@@ -1,0 +1,81 @@
+html,body{height:100%}
+body{overflow-x:hidden}
+
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#3b494c;border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:#4cd6fb}
+
+.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
+
+.nav-pill.active{background:#0068751f;color:#9cf0ff;border:1px solid #00e5ff40}
+.nav-pill.active span:first-child{color:#00e5ff}
+
+.card{border:1px solid #3b494c55;background:#181c20;border-radius:.5rem;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:1px;background:linear-gradient(90deg,transparent,#00e5ff66,transparent)}
+.card-glow{box-shadow:0 0 0 1px #00e5ff14,0 8px 40px -18px #00e5ff26}
+
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:20px;padding:0 6px;border:1px solid #3b494c;border-bottom-width:2px;border-radius:4px;font-size:10px;line-height:1;color:#bac9cc;background:#0f1316}
+
+.data-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:7px 0;border-bottom:1px dashed #3b494c44}
+.data-row:last-child{border-bottom:none}
+.data-row dt{font:500 11px/16px "JetBrains Mono",monospace;letter-spacing:.02em;color:#bac9cc;text-transform:uppercase}
+.data-row dd{font:600 13px/18px "JetBrains Mono",monospace;color:#e0e2e9;text-align:right;overflow-wrap:anywhere}
+
+.map-canvas{position:relative;overflow:hidden;border-radius:.5rem}
+.grid-layer{position:absolute;inset:0;pointer-events:none}
+.grid-layer::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#00e5ff0d 1px,transparent 1px),linear-gradient(90deg,#00e5ff0d 1px,transparent 1px);background-size:26px 26px}
+.grid-layer::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,transparent 0%,rgba(16,20,24,.55) 75%,#101418 100%)}
+
+.scanner{position:absolute;left:0;right:0;height:70px;background:linear-gradient(180deg,transparent,#00e5ff14,transparent);animation:scandown 5.5s linear infinite;pointer-events:none;z-index:1}
+@keyframes scandown{0%{top:-70px}100%{top:100%}}
+
+.tick-bar{animation:tickbar 18s linear infinite;background-image:linear-gradient(90deg,transparent 0 6px,#3b494c 6px 7px,transparent 7px 14px);background-size:14px 100%}
+@keyframes tickbar{0%{background-position:0 0}100%{background-position:14px 0}}
+
+.pulse-ring{animation:pulsering 2.2s ease-out infinite}
+@keyframes pulsering{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.4);opacity:0}}
+
+.blink{animation:blink 1.1s steps(2,start) infinite}
+@keyframes blink{50%{opacity:0}}
+
+.countdown{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.toast{animation:toastin .25s ease-out}
+@keyframes toastin{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+table.cdata{width:100%;border-collapse:collapse}
+table.cdata th{font:600 10px/14px "JetBrains Mono",monospace;letter-spacing:.08em;color:#bac9cc;text-transform:uppercase;text-align:left;padding:8px 10px;border-bottom:1px solid #3b494c99}
+table.cdata td{padding:9px 10px;font:500 12px/18px "JetBrains Mono",monospace;color:#e0e2e9;border-bottom:1px solid #3b494c33;vertical-align:middle}
+table.cdata tr:hover td{background:#00e5ff0d}
+
+.row-click{cursor:pointer}
+
+.bar{height:6px;border-radius:2px;background:linear-gradient(90deg,#00b2d6,#00e5ff)}
+.bar-neg{background:linear-gradient(90deg,#93000a,#ffb4ab)}
+.ring-bar{height:6px;border-radius:99px;background:#31353a;overflow:hidden}
+.ring-bar>div{height:100%;border-radius:99px}
+
+.status-dot{width:7px;height:7px;border-radius:99px;display:inline-block}
+
+svg.flow canvas-fix{shape-rendering:geometricPrecision}
+.edge{stroke:#3b494c;stroke-width:1}
+.edge.hot{stroke:#00e5ff80}
+.node-glow{filter:drop-shadow(0 0 4px #00e5ff) }
+
+.spin{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.val-pos{color:#9cf0ff}
+.val-neg{color:#ffb4ab}
+.val-neutral{color:#e0e2e9}
+
+.dropdown-panel{max-height:min(420px,60vh);overflow-y:auto}
+
+.mono{font-family:"JetBrains Mono",monospace}
+
+@media print{
+  aside,header,#fab-sim,#toast-root{display:none !important}
+  body{background:#fff}
+  .card{break-inside:avoid}
+  .print-on{display:block !important}
+}
